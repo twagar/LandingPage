@@ -1,56 +1,85 @@
 body {
-    font-family:Roboto, Segoe, sans-serif
-    display:flex;
-    flex-direction:row;
+    font-family:Roboto, Segoe, sans-serif;
     margin:0;
+    padding:0;
+}
+
+.container{ 
+    display:flex;
+    flex-direction:column;
 
 }
 
 .body {
     display:flex;
     flex:1;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    flex-direction:row;
+    background-color: #1f2937;
+    padding:100px 80px 90px;
+    color:#e5e7eb;f
+    gap: 32px;
 }
 
-.headerlinks {
+.header {
+    width: 500px;
+    display:flex;
+    flex-direction:column;
+}
+
+.header .b1 {
+    display:flex;   
+    justify-content:center;
+    align-self: center;
+    align-items:center;
+    color:white;
+    border-radius:20px;
+    background-color: #3882f6;
+    width: 75px;
+    height:25px;
+    margin-right:425px;
+}
+
+.header2 .dog {
+    width:400px;
+}
+
+.header2 {
+    display:flex;
+}
+
+.headercontent {
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+}
+
+.navigation {
     background-color:#1f2937;
     font-size:18px;
     padding: 24px;
     color:#e5e7eb;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+    padding:20px 220px;
     gap:16px;
 }
 
-.headercontent {
-    background-color: #1f2937;
-    padding:56px;
-    color:#e5e7eb;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-.b1 {
-    display:flex;
-    justify-content:center;
-    flex
-}
-.subtext {
+.subtext {  
     flex-direction:column;
-}
-
-.dog {
-    width:600px;
 }
 
 .logo {
     background-color: #1f2937;
     color: #f9faf8;
-    padding-left:40px;
+    padding-left:1px;
     font-size:24px;
     margin-right:auto;
-    align-self:;
+
 }
 .head {
     font-size:48px;
@@ -72,28 +101,43 @@ h4 {
 
 .cards {
     display:flex;
-    padding:32px;
+    flex-direction: row;
     flex-wrap:wrap;
     justify-content:center;
+    margin-bottom:200px;
+}
+
+.c {
+    flex-direction: row;
+    margin-top:230px;
 }
 
 .card {
     border-radius:25px;
     border: 6px #3882f6 solid;
+    padding:25px;
     height: 200px;
-    width: 200px;1
+    width: 200px;
+    margin-left:25px;
+    margin-top:25px;
 }
 
 .grayblock {
     background-color: #e5e7eb;
-}
-
-.quote {
+    flex-direction: row-reverse;
+    flex-wrap:wrap;
+    display:flex;
+    padding: 250px;
     font-size:36px;
+
+.thor {
+    align-self:right;
+}
+em {
+    font-size:48px;
     font-style:italic;
 }
 
-.action {1
 .c {
     display:flex;
     flex:0 1 0;
