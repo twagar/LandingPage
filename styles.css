@@ -12,7 +12,7 @@ body {
 
 .body {
     display:flex;
-    flex:1;
+    flex-shrink:0;
     align-items: center;
     flex-wrap:wrap;
     justify-content:space-evenly;
@@ -63,6 +63,7 @@ body {
     color:#e5e7eb;
     display:flex;
     justify-content: space-evenly;
+    flex-shrink:0;
     flex-direction: row;
     align-items: center;
     padding:20px 220px;
@@ -118,7 +119,7 @@ h4 {
     padding:25px;
     height: 200px;
     width: 200px;
-    margin-left:25px;
+    margin-left:50px;
     margin-top:25px;
 }
 
@@ -127,12 +128,10 @@ h4 {
     flex-direction: row-reverse;
     flex-wrap:wrap;
     display:flex;
-    padding: 250px;
     font-size:36px;
-
-.thor {
-    align-self:right;
+    padding:100px 80px 90px;
 }
+
 em {
     font-size:48px;
     font-style:italic;
@@ -142,14 +141,63 @@ em {
     display:flex;
     flex:0 1 0;
     justify-content: center;
-    fl
+}
+
+.c2a {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    padding:200px;
+}
+
+.action {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+    background-color:#3882f6;
+    border-radius:12px;
+    width:1400px;
+    height:200px;
+}
+
+.call {
+    color:#f9faf8;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.call2 {
+    font-size:16px;
+    align-self:flex-start;
+    color:#f9faf8;
+}
+
+.containcall {
+    display:flex;
+    flex-direction: column;
+    padding:64px;
+}
+
+.containcall p {
+    padding:0px;
+    margin:0px;
 }
 
 .b2 {
     background-color: #3882f6;
+    border-radius:12px;
+    color:#f9faf8;
+    font-weight:bold;   
+    border-color:#f9faf8; 
+    border-style:solid;
+    width:120px;
+    padding:12px;
+    margin-right:100px;
 }
 
-footer {
+.footer {
     background-color: #1f2937;
     color:#f9faf8;
     margin-top:auto;
@@ -157,4 +205,5 @@ footer {
     display:flex;
     justify-content: center;
     align-items:center;
+    flex:0;
 }
